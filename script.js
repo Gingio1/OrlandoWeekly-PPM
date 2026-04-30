@@ -21,7 +21,8 @@ document.querySelectorAll('.sidebar-tab').forEach(function(tab) {
 
 // HAMBURGER MENU
 document.getElementById('hamburger').addEventListener('click', function() {
-  document.getElementById('nav-menu').classList.toggle('open');
+  var isOpen = document.getElementById('nav-menu').classList.toggle('open');
+  this.setAttribute('aria-expanded', isOpen);
 });
 
 // SEARCH TOGGLE
