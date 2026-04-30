@@ -55,9 +55,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
- ADVIDEOCOUNTDOWNsetTimeout(function() {
-  document.querySelector('.ad-video').style.display = 'none';
-}, 15000);
+
 
 document.getElementById('hamburger').addEventListener('click', function() {
   document.getElementById('nav-menu').classList.toggle('open');
